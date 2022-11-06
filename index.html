@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+<!--Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200">
+    <title>ABCats</title>
+    <style> 
+    *{
+      box-sizing: border-box;
+    }
+    body{
+        width: 1350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1, h5{
+        font-family: 'Mochiy Pop One', sans-serif;
+    }
+    p{
+        font-family: 'Kanit', sans-serif; 
+        font-size: 20px;
+    }
+    li{
+        font-family: 'Kanit', sans-serif; 
+        font-size: 15px;
+    }
+    .img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 54%;
+    }
+    .img2{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .sidecontent{
+        width: 50%;
+    }
+    .title{
+        font-family: 'Mochiy Pop One', sans-serif;
+        font-size: 35px;
+        text-align: center;
+        padding: 50px 16px;
+        color: black;
+        background-color: #F2CDAC; 
+       
+    }   
+    ul{
+        list-style-type: none;
+    }
+    .navbar{ /*for the whole navbar*/
+        background-color: #D2E8E3;
+        overflow: hidden;
+    }
+    .navbar a{ /*for the details*/
+        float: left;
+        display: block;
+        font-size: 20px;
+        font-family: 'Kanit', sans-serif;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        color:black;
+
+    }
+    .navbar a:hover{ /*navbar hover*/
+        background-color: #164773;
+        color: white;
+   }
+    a:link, a:visited { /*link button*/
+        background-color: #D2E8E3 ;
+        color: black;
+        padding: 14px 50px;
+        font-family: 'Kanit', sans-serif;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+    a:hover, a:active{ /*for button hover*/
+        background-color: #164773;
+        color: white;
+    }
+    .catcolumn{ /*leftmost columns - acats, bcats*/
+    float: left;
+    width:75%;
+    }
+    .infocolumn{ /*rightmost columns - gallery, contacts*/
+    float: left;
+    width: 25%;
+    padding-left: 20px
+    }
+
+    .box1 { /*content*/
+   background-color: beige;
+   padding: 20px;
+   margin-top: 20px;
+   height: 600px;
+   }
+   .box2 { /*content*/
+   background-color: #F2CDAC;
+   padding: 20px;
+   margin-top: 20px;
+   height: 600px;
+   }
+    .row:after { /*separates acats from bcats*/
+   content: "";
+   display: table;
+   clear: both;
+    }
+
+    </style>
+<body>
+    <div class="title">
+        <h1>ABCats!</h1>
+        <h6>A website to showcase our cats!</h6>
+    </div>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li style="float:right"><a href="gallery.html">Gallery</a></li>
+            <li style="float:right"><a href="BPets.html">BPets</a></li>
+            <li style="float:right"><a href="ACats.html">ACats</a></li>
+        </ul>
+    </div>
+
+    <div class="row"> <!--for acats and bcats-->
+        <div class="catcolumn">
+            <div class="box1">
+                <h1>Featuring the "A" Cats!</h1>
+                <h1> Want to know more about them?</h1>
+                <img src="https://i.imgur.com/OMEn190.png" alt="Three Cats Anya Amiya Amari respectively" class="img">
+                <p>Click the button down below to meet Anya, Amiya, and Amari !</p>
+                <a href="ACats.html" target="_self">Visit ACats!  <span class="material-symbols-outlined"> pets</span> </a>
+
+            </div>
+            <div class="box2">
+                <h1>Featuring the "B" Pets!</h1>
+                <img src="https://i.imgur.com/no9h6Xt.png" alt="Three Cats Beauty, Berry, Benny respectively" class="img">
+                <div class="column side">
+                    <h1>Want to see more of them?</h1>
+                    <p>Click the button down below to know more about the BCats and our other pets!</p>
+                    <a href="BPets.html" target="_self">Visit BPets!  <span class="material-symbols-outlined"> pets</span> </a>
+                </div>
+            </div>
+        </div>
+        <div class="infocolumn">
+            <div class="box2">
+                <img src="https://i.imgur.com/WeJxx3g.png" alt="Amiya Cute Eyes" class="img2">
+                <h1>Still not enough?</h1>
+                <p>Click here to see more of ABCats + Other pets!!</p>
+                <a href="gallery.html" target="_self">Gallery  <span class="material-symbols-outlined"> pets</span></a>
+
+            </div>
+            <div class="box1">
+                <h1>Contact Me!</h1>
+                <h5>Here's some ways to reach out to me!</h5>
+                <ul>
+                    <li><span class="material-symbols-outlined">person </span> : <br> Jashley Angel A. Serdoncillo</li>
+                    <li><span class="material-symbols-outlined">mail</span> : <br> jashley080708@gmail.com</li>
+                    <li><span class="material-symbols-outlined">school</span> : jserdoncillo2026@clc.pshs.edu.ph</li>
+                    <li><span class="material-symbols-outlined">public</span> : <br> @jashley878 (FB) </li>
+                    <li><span class="material-symbols-outlined">public</span> : <br> @jashshshsh_serds (IG) </li>
+
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+  
+</body>
+
+ </html>
